@@ -31,6 +31,8 @@
 }
 
 #header nav ul li {
-    padding: 1vw;
+    padding: 0.2vw;
+    margin: 1vw;
+    border-bottom: 0.3vw solid white;
 }
 /* header stylings end */
