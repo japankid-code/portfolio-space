@@ -1,7 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Exo 2'; 
+    font-family: 'Exo 2';
+}
+
+body {
+    font-size: 22px;
+}
+
+header,
+section,
+footer {
+    width: 100%;
 }
 
 .flexbox {
@@ -12,7 +22,6 @@
 #header {
     background-color: black;
     height: 7vw;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -33,6 +42,36 @@
 #header nav ul li {
     padding: 0.2vw;
     margin: 1vw;
-    border-bottom: 0.3vw solid white;
+    border-bottom: 0.2vw solid white;
 }
 /* header stylings end */
+
+/* hero styling start */
+#hero {
+    background-color: #464646;
+    height: 21vw;
+}
+/* hero styling ends */
+
+/* about styling starts */
+#about {
+    background-color: #242424;
+    height: 19vw;
+}
+/* about styling ends */
+
+/* projects styling starts */
+#projects {
+    background-color: #141414;
+    height: 121vw;
+    color: rgb(202, 202, 202);
+}
+/* projects styling ends */
+
+/* contact styling starts */
+#contact {
+    background-color: #000000;
+    height: 13vw;
+    color: white;
+}
+/* contact styling ends */
