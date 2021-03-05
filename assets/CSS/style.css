@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2'; 
+}
+
+.flexbox {
+    display: flex;
+}
+
+/* header stylings start */
+#header {
+    background-color: black;
+    height: 7vw;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h1 {
+    color: white;
+    margin-left: 3vw;
+}
+
+#header nav {
+    color: white;
+}
+
+#header nav ul {
+    list-style: none;
+}
+
+#header nav ul li {
+    padding: 1vw;
+}
+/* header stylings end */
