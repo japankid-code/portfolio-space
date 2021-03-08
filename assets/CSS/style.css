@@ -24,6 +24,14 @@ footer {
     display: flex;
 }
 
+.divider {
+    margin: 0.4rem 0.4rem 0.4rem 0.4rem;
+    height: auto;
+    width: 0.2rem;
+    border-radius: 5px;
+    background-color: var(--primaryBackground);
+}
+
 /* header stylings start */
 #header {
     background-color: var(--primaryBackground);
@@ -34,7 +42,7 @@ footer {
 
 #header h1 {
     color: var(--textColor);
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 #header nav {
@@ -67,6 +75,21 @@ footer {
     background-color: var(--secondaryAccent);
     height: 13rem;
 }
+
+#about h2 {
+    flex: 2 1 0;
+    margin: 0.2rem;
+    border-top: 0.2rem solid var(--primaryBackground);
+    border-bottom: 0.2rem solid var(--primaryBackground);
+    height: 0 auto;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#about p {
+    flex: 12 1 0;
+}
+
 /* about styling ends */
 
 /* projects styling starts */
@@ -74,6 +97,20 @@ footer {
     background: -webkit-linear-gradient(-90deg, var(--secondaryAccent) 0%, var(--secondaryTextColor) 100%);
     height: 70rem;
     color: var(--secondaryTextColor);
+}
+
+#projects h2 {
+    flex: 2 1 0;
+    margin: 0.2rem;
+    border-top: 0.2rem solid var(--primaryBackground);
+    border-bottom: 0.2rem solid var(--primaryBackground);
+    height: 0 auto;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#projects .projects {
+    flex: 12 1 0;
 }
 /* projects styling ends */
 
