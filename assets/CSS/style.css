@@ -55,8 +55,8 @@ footer {
 /* hero styling start */
 #hero {
     color: var(--textColor);
-    background-image: url("../images/rain-316580.jpg");
-    background-repeat: repeat-x;
+    background-image: url("../images/koi-3303950_640.png");
+    background-repeat: repeat;
     height: 17rem;
 }
 /* hero styling ends */
