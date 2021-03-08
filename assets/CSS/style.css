@@ -54,8 +54,9 @@ footer {
 
 /* hero styling start */
 #hero {
-    color: var(--secondaryTextColor);
-    background-color: var(--primaryAccent);
+    color: var(--textColor);
+    background-image: url("../images/rain-316580.jpg");
+    background-repeat: repeat-x;
     height: 17rem;
 }
 /* hero styling ends */
