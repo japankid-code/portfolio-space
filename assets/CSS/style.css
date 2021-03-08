@@ -2,10 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Exo 2';
+    --primaryBackground: #181114;
+    --primaryAccent: #C6A9B6;
+    --secondaryAccent: #FFE085;
+    --textColor: #DFE2E2;
+    --secondaryTextColor: #1E1E24;
 }
 
 body {
     font-size: 22px;
+    background-color: var(--primaryBackground);
 }
 
 header,
@@ -20,19 +26,19 @@ footer {
 
 /* header stylings start */
 #header {
-    background-color: black;
-    height: 7vw;
+    background-color: var(--primaryBackground);
+    height: 6rem;
     justify-content: space-between;
     align-items: center;
 }
 
 #header h1 {
-    color: white;
-    margin-left: 3vw;
+    color: var(--textColor);
+    margin-left: 1rem;
 }
 
 #header nav {
-    color: white;
+    color: var(--textColor);
 }
 
 #header nav ul {
@@ -40,38 +46,40 @@ footer {
 }
 
 #header nav ul li {
-    padding: 0.2vw;
-    margin: 1vw;
-    border-bottom: 0.2vw solid white;
+    padding: 0.2rem;
+    margin: 1rem;
+    border-bottom: 0.2rem solid var(--secondaryAccent);
 }
 /* header stylings end */
 
 /* hero styling start */
 #hero {
-    background-color: #464646;
-    height: 21vw;
+    color: var(--secondaryTextColor);
+    background-color: var(--primaryAccent);
+    height: 17rem;
 }
 /* hero styling ends */
 
 /* about styling starts */
 #about {
-    background-color: #242424;
-    height: 19vw;
+    color: var(--secondaryTextColor);
+    background-color: var(--secondaryAccent);
+    height: 13rem;
 }
 /* about styling ends */
 
 /* projects styling starts */
 #projects {
-    background-color: #141414;
-    height: 121vw;
-    color: rgb(202, 202, 202);
+    background: -webkit-linear-gradient(-90deg, var(--secondaryAccent) 0%, var(--secondaryTextColor) 100%);
+    height: 70rem;
+    color: var(--secondaryTextColor);
 }
 /* projects styling ends */
 
 /* contact styling starts */
 #contact {
-    background-color: #000000;
-    height: 13vw;
-    color: white;
+    background-color: var(--secondaryTextColor);
+    height: 9rem;
+    color: var(--textColor);
 }
 /* contact styling ends */
