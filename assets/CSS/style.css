@@ -78,7 +78,7 @@ footer {
 #about {
     color: var(--secondaryTextColor);
     background-color: var(--secondaryAccent);
-    height: 13rem;
+    height: auto;
 }
 
 #about h2 {
@@ -90,7 +90,8 @@ footer {
 }
 
 #about p {
-    flex: 12 1 0;
+    flex: 10 1 0;
+    margin: 0.4rem;
 }
 
 /* about styling ends */
@@ -98,7 +99,7 @@ footer {
 /* projects styling starts */
 #projects {
     background: -webkit-linear-gradient(-90deg, var(--secondaryAccent) 0%, var(--primaryBackground) 100%);
-    height: 70rem;
+    height: auto;
     color: var(--secondaryTextColor);
 }
 
@@ -110,9 +111,34 @@ footer {
     align-items: flex-start;
 }
 
-#projects .projects {
-    flex: 12 1 0;
+#mainProject {
+    width: 100%;
+    flex-basis: 100%;
+    margin: 0.2rem;
+    display: block;
+    border: 5px solid var(--primaryBackground);
 }
+
+#mainProject img {
+    object-fit: fill;
+}
+
+#projectBox {
+    margin: 0.4rem;
+    flex: 10 1 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#projectBox article img {
+    width: 100%;
+}
+
+#projectBox article {
+    margin: 0.2rem;
+    border: 5px solid var(--primaryBackground);
+}
+
 /* projects styling ends */
 
 /* contact styling starts */
