@@ -63,7 +63,7 @@ footer {
 /* hero styling start */
 #hero {
     color: var(--textColor);
-    background-image: url("../images/koi-3303950_640.png");
+    background-image: url("../images/tileable-2199979_640.jpg");
     background-repeat: repeat;
     height: 17rem;
 }
@@ -79,8 +79,6 @@ footer {
 #about h2 {
     flex: 2 1 0;
     margin: 0.2rem;
-    border-top: 0.2rem solid var(--primaryBackground);
-    border-bottom: 0.2rem solid var(--primaryBackground);
     height: 0 auto;
     justify-content: flex-end;
     align-items: flex-start;
@@ -102,8 +100,6 @@ footer {
 #projects h2 {
     flex: 2 1 0;
     margin: 0.2rem;
-    border-top: 0.2rem solid var(--primaryBackground);
-    border-bottom: 0.2rem solid var(--primaryBackground);
     height: 0 auto;
     justify-content: flex-end;
     align-items: flex-start;
