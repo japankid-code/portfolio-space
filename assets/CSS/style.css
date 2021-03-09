@@ -84,16 +84,13 @@ footer {
 #about h2 {
     flex: 2 1 0;
     margin: 0.2rem;
-    height: 0 auto;
     justify-content: flex-end;
-    align-items: flex-start;
 }
 
 #about p {
     flex: 10 1 0;
     margin: 0.4rem;
 }
-
 /* about styling ends */
 
 /* projects styling starts */
@@ -106,36 +103,42 @@ footer {
 #projects h2 {
     flex: 2 1 0;
     margin: 0.2rem;
-    height: 0 auto;
     justify-content: flex-end;
     align-items: flex-start;
-}
-
-#mainProject {
-    width: 100%;
-    flex-basis: 100%;
-    margin: 0.2rem;
-    display: block;
-    border: 5px solid var(--primaryBackground);
-}
-
-#mainProject img {
-    object-fit: fill;
 }
 
 #projectBox {
     margin: 0.4rem;
     flex: 10 1 0;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-#projectBox article img {
-    width: 100%;
+    width: 95%;
+    max-width: 1100px;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 #projectBox article {
+    flex-basis: 47%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+}
+
+#projectBox img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+    border: 5px solid var(--primaryBackground);
+    vertical-align: bottom;
+}
+
+#mainProject {
     margin: 0.2rem;
+    flex-basis: 97% !important;
+    max-width: 1000px !important;
+}
+
+#mainProject img {
+    width: 100%;
+    border-radius: 13px;
     border: 5px solid var(--primaryBackground);
 }
 
