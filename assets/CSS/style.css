@@ -65,17 +65,30 @@ footer {
 }
 /* header stylings end */
 
+/* grid stlying here */
+#contentGrid {
+    background-color: var(--secondaryAccent);
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10% 20% 20% 20% / auto-flow;
+}
+/* grid styling end */
+
 /* hero styling start */
 #hero {
+    grid-column: 1 / 6;
+    grid-row: 1;
     color: var(--textColor);
     background-image: url("../images/hero-background.jpg");
     background-repeat: repeat;
-    height: 17rem;
+    height: 30vw;
 }
 /* hero styling ends */
 
 /* about styling starts */
 #about {
+    grid-column: 1 / 5;
+    grid-row: 2;
     color: var(--secondaryTextColor);
     background-color: var(--secondaryAccent);
     height: auto;
@@ -95,7 +108,9 @@ footer {
 
 /* projects styling starts */
 #projects {
-    background: -webkit-linear-gradient(-90deg, var(--secondaryAccent) 0%, var(--primaryBackground) 100%);
+    grid-column: 1 / 5;
+    grid-row: 3;
+    background: var(--secondaryAccent);
     height: auto;
     color: var(--secondaryTextColor);
 }
@@ -146,6 +161,8 @@ footer {
 
 /* contact styling starts */
 #contact {
+    grid-row: 4;
+    grid-column: 1 / 6;
     background-color: var(--primaryBackground);
     height: 9rem;
     color: var(--textColor);
