@@ -25,7 +25,8 @@ footer {
     width: 100%;
 }
 
-section {
+section,
+footer {
     padding: 1rem 0 1rem 0;
 }
 
@@ -180,11 +181,39 @@ section {
 
 /* contact styling starts */
 #contact {
-    grid-row: 4;
-    grid-column: 1 / 6;
+    display: grid;
+    grid-template-columns: 20% 1% 59% 20%;
+    grid-template-rows: 10% / auto-flow;
     background-color: var(--primaryBackground);
-    height: 9rem;
     color: var(--textColor);
+}
+
+#contact h2.flexbox {
+    grid-column: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#contact .divider {
+    background-color: var(--textColor);
+}
+
+#contact address {
+    grid-column: 3;
+    font-style: normal;
+    margin: 2rem 0 2rem 0;
+}
+
+#contact address ul.flexbox {
+    grid-column: 3 / 5;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#contact address ul li {
+    padding: 0.2rem;
+    margin: 1rem;
+    border-bottom: 0.2rem solid var(--primaryAccent)
 }
 /* contact styling ends */
 
