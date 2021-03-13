@@ -66,13 +66,24 @@ footer {
 /* header stylings end */
 
 /* hero styling start */
-#hero {
+#hero.flexbox {
     grid-column: 1 / 6;
     grid-row: 1;
     color: var(--textColor);
     background-image: url("../images/hero-background.jpg");
     background-repeat: repeat;
     height: 30vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#hero img {
+    height: 75%;
+    width: auto;
+    margin: 12.5%;
+    object-fit: contain;
+    border: 5px solid var(--primaryBackground);
+    border-radius: 5px;
 }
 /* hero styling ends */
 
