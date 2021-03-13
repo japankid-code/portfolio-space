@@ -25,6 +25,10 @@ footer {
     width: 100%;
 }
 
+section {
+    padding: 1rem 0 1rem 0;
+}
+
 .flexbox {
     display: flex;
 }
@@ -56,6 +60,7 @@ footer {
 
 #header nav ul {
     list-style: none;
+    margin-right: 1rem;
 }
 
 #header nav ul li {
@@ -75,12 +80,13 @@ footer {
     height: 30vw;
     justify-content: flex-end;
     align-items: center;
+    border-bottom: 5px solid var(--primaryBackground);
 }
 
 #hero img {
     height: 75%;
     width: auto;
-    margin: 12.5%;
+    margin: 5%;
     object-fit: contain;
     border: 5px solid var(--primaryBackground);
     border-radius: 5px;
