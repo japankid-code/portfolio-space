@@ -170,3 +170,7 @@ footer {
     color: var(--textColor);
 }
 /* contact styling ends */
+
+@media screen and (min-width: 700px) {
+    
+}
