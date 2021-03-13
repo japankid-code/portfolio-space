@@ -119,27 +119,45 @@ footer {
 }
 
 #projectGrid article {
-    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    border: 5px solid var(--primaryBackground);
+    object-fit: fill;
 }
 
 #projectGrid article:first-child {
+    margin-top: 0.9rem;
     grid-row: 1;
     grid-column: 1 / 3;
 }
+/* portfolio card styling start */
+.portfolioItem.flexbox {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
 
-#projectGrid img {
+.portfolioItem label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    color: var(--textColor);
+    padding: 0 0.4rem 0.4rem 0.4rem;
+    margin-bottom: 1rem;
+    background-color: var(--primaryBackground);
+}
+
+.portfolioItem img {
+    height: 7rem;
+    width: 100%;
     object-fit: cover;
-    width: 100%;
-    border-radius: 8px;
-    border: 5px solid var(--primaryBackground);
-    vertical-align: bottom;
 }
 
-#mainProject img {
-    width: 100%;
-    border-radius: 13px;
-    border: 5px solid var(--primaryBackground);
+.portfolioItem.featured img {
+    height: auto;
 }
+/* portfolio stying end */
 
 /* projects styling ends */
 
