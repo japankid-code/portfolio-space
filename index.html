@@ -5,8 +5,9 @@
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="./assets/CSS/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
-    <body>
+    <body class='flex flex-col min-h-screen min-w-screen'>
         <header id="header" class="flexbox">
             <h1>Jake Rankin</h1>
             <nav>
@@ -18,71 +19,72 @@
                 </ul>
             </nav>
         </header>
-        <section id="hero" class="flexbox">
-            <img src="./assets/images/me.jpg" alt="jake rankin standing in the sun">
-        </section>
-        <section id="about" class="">
-            <h2 class="flexbox">About</h2>
-            <div class="divider"></div>
-            <p class="flexbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati quo facere ipsa minima laudantium esse, doloremque facilis. Minus possimus necessitatibus sunt veritatis repudiandae consequatur, ducimus ad earum saepe porro.</p>
-        </section>
-        <section id="projects">
-            <h2 class="flexbox">Projects</h2>
-            <div class="divider"></div>
-            <div id="project-grid">
-                <article>
-                    <a class="portfolio-item run-buddy flexbox featured" href="https://japankid-code.github.io/run-buddy/" target="_blank">
-                        <label for="run-buddy">
-                            <h3>Run Buddy</h3>
-                            <span>Webpage</span>
-                        </label>
-                        <img src="./assets/images/run-buddy.png" alt="react tic tac toe app" />
-                    </a>
-                </article>
-                <article>
-                    <a class="portfolio-item tictactoe flexbox" href="https://japankid-code.github.io/reactactoe/" target="_blank">
-                        <label for="tictactoe">
-                            <h3>Tic Tac Toe</h3>
-                            <span>React app</span>
-                        </label>
-                        <img src="./assets/images/tictactoe.png" alt="react tic tac toe app" />
-                    </a>
-                </article>
-                <article>
-                    <a class="portfolio-item tictactoe flexbox" href="https://japankid-code.github.io/reactactoe/" target="_blank">
-                        <label for="tictactoe">
-                            <h3>Tic Tac Toe</h3>
-                            <span>React app</span>
-                        </label>
-                        <img src="./assets/images/tictactoe.png" alt="react tic tac toe app" />
-                    </a>
-                </article>
-                <article>
-                    <a class="portfolio-item tictactoe flexbox" href="https://japankid-code.github.io/reactactoe/" target="_blank">
-                        <label for="tictactoe">
-                            <h3>Tic Tac Toe</h3>
-                            <span>React app</span>
-                        </label>
-                        <img src="./assets/images/tictactoe.png" alt="react tic tac toe app" />
-                    </a>
-                </article>
-                <article>
-                    <a class="portfolio-item tictactoe flexbox" href="https://japankid-code.github.io/reactactoe/" target="_blank">
-                        <label for="tictactoe">
-                            <h3>Tic Tac Toe</h3>
-                            <span>React app</span>
-                        </label>
-                        <img src="./assets/images/tictactoe.png" alt="react tic tac toe app" />
-                    </a>
-                </article>
-            </div>
-        </section>
+        <main class ='flex-grow'>
+            <section id="hero" class="flexbox">
+                <img src="./assets/images/me.jpg" alt="jake rankin standing in the sun">
+            </section>
+            <section id="about" class="">
+                <h2 class="flexbox">About</h2>
+                <div class="divider"></div>
+                <p class="flexbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati quo facere ipsa minima laudantium esse, doloremque facilis. Minus possimus necessitatibus sunt veritatis repudiandae consequatur, ducimus ad earum saepe porro.</p>
+            </section>
+            <section id="projects">
+                <h2 class="flexbox">Projects</h2>
+                <div class="divider"></div>
+                <div id="project-grid">
+                    <article>
+                        <a class="portfolio-item run-buddy flexbox featured" href="https://japankid-code.github.io/run-buddy/" target="_blank">
+                            <label for="run-buddy">
+                                <h3>Run Buddy</h3>
+                                <span>Webpage</span>
+                            </label>
+                            <img src="./assets/images/run-buddy.png" alt="react tic tac toe app" />
+                        </a>
+                    </article>
+                    <article>
+                        <a class="portfolio-item tictactoe flexbox" href="https://japankid-code.github.io/reactactoe/" target="_blank">
+                            <label for="tictactoe">
+                                <h3>Tic Tac Toe</h3>
+                                <span>React app</span>
+                            </label>
+                            <img src="./assets/images/tictactoe.png" alt="react tic tac toe app" />
+                        </a>
+                    </article>
+                    <article>
+                        <a class="portfolio-item tictactoe flexbox" href="https://japankid-code.github.io/reactactoe/" target="_blank">
+                            <label for="tictactoe">
+                                <h3>Tic Tac Toe</h3>
+                                <span>React app</span>
+                            </label>
+                            <img src="./assets/images/tictactoe.png" alt="react tic tac toe app" />
+                        </a>
+                    </article>
+                    <article>
+                        <a class="portfolio-item tictactoe flexbox" href="https://japankid-code.github.io/reactactoe/" target="_blank">
+                            <label for="tictactoe">
+                                <h3>Tic Tac Toe</h3>
+                                <span>React app</span>
+                            </label>
+                            <img src="./assets/images/tictactoe.png" alt="react tic tac toe app" />
+                        </a>
+                    </article>
+                    <article>
+                        <a class="portfolio-item tictactoe flexbox" href="https://japankid-code.github.io/reactactoe/" target="_blank">
+                            <label for="tictactoe">
+                                <h3>Tic Tac Toe</h3>
+                                <span>React app</span>
+                            </label>
+                            <img src="./assets/images/tictactoe.png" alt="react tic tac toe app" />
+                        </a>
+                    </article>
+                </div>
+            </section>
+        </main>
         <footer id="contact">
             <h2 class="flexbox">Contact Me</h2>
             <div class="divider"></div>
             <address>
                 <ul class="flexbox">
-                    <li>414.460.4992</li>
                     <li><a href="mailto:japankid.jake@gmail.com">Email</a></li>
                     <li><a href="https://github.com/japankid-code">GitHub</a></li>
                     <li><a href="https://twitter.com/japankidcodes">Twitter</a></li>
