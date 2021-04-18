@@ -1,95 +1,73 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Portfolio</title>
+        <title>Jake Rankin</title>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="./assets/CSS/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body class='flex flex-col min-h-screen min-w-screen'>
-        <header id="header" class="flexbox">
-            <h1>Jake Rankin</h1>
-            <nav>
-                <ul class="flexbox">
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <li><a href="resume.pdf">RESUME</a></li>
-                </ul>
-            </nav>
+        <header id="header" class="">
+            <div class="flex flex-row items-center min-w-screen bg-dark text-light">
+                <h1 class='flex-grow text-4xl m-4'>Jake Rankin</h1>
+                <nav class='flex space-between m-2 text-sm'>
+                    <a class='p-0.5 m-0.5' href="#about">ABOUT</a>
+                    <a class='p-0.5 m-0.5' href="#projects">PROJECTS</a>
+                    <a class='p-0.5 m-0.5' href="#contact">CONTACT</a>
+                    <a class='p-0.5 m-0.5' href="resume.pdf">RESUME</a>
+                </nav>
+            </div>
         </header>
-        <main class ='flex-grow'>
-            <section id="hero" class="flexbox">
-                <img src="./assets/images/me.jpg" alt="jake rankin standing in the sun">
+        <main class ='flex-grow bg-light'>
+            <section id="hero" class="flex min-w-full">
+                <div class="flex p-4 justify-between min-w-full bg-mid">
+                    <div class="placeholder"><!-- placeholder --></div>
+                    <img src="./assets/images/me.jpg" class='w-64 h-56  m-2 self-end rounded-xl' alt="a wild jake standing in the sun">
+                </div>
             </section>
-            <section id="about" class="">
-                <h2 class="flexbox">About</h2>
-                <div class="divider"></div>
-                <p class="flexbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati quo facere ipsa minima laudantium esse, doloremque facilis. Minus possimus necessitatibus sunt veritatis repudiandae consequatur, ducimus ad earum saepe porro.</p>
+            <section id="about" class="grid grid-cols-12">
+                <h2 class="col-start-2 col-span-2 flex justify-end text-xl">About</h2>
+                <div class='flex col-span-1 justify-center'>
+                    <div class="divider m-1 h-8 w-1 rounded bg-dark"></div>
+                </div>
+                <p class="col-span-7 flex">Just some info about me. I am an up and coming coder looking for challenging projects to work on.</p>
             </section>
-            <section id="projects">
-                <h2 class="flexbox">Projects</h2>
-                <div class="divider"></div>
-                <div id="project-grid">
-                    <article>
-                        <a class="portfolio-item run-buddy flexbox featured" href="https://japankid-code.github.io/run-buddy/" target="_blank">
-                            <label for="run-buddy">
-                                <h3>Run Buddy</h3>
+            <section id="projects" class='grid grid-cols-12'>
+                <h2 class="flex col-start-2 col-span-2 justify-end text-xl">Projects</h2>
+                <div class='flex col-span-1 justify-center'>
+                    <div class="divider m-1 h-24 w-1 rounded bg-dark"></div>
+                </div>
+                <div id="" class='col-span-7 grid grid-cols-2'>
+                    <article class='relative m-2 col-span-2'>
+                        <a class="" href="https://japankid-code.github.io/run-buddy/" target="_blank">
+                            <label class='absolute z-50 bottom-8 cursor-pointer right-0 py-2 px-4 bg-mid text-light rounded-tl-md rounded-bl-md'>
+                                <h3 class='text-lg'>Run Buddy</h3>
+                                <span class='flex text-sm justify-center'>Webpage</span>
+                            </label>
+                            <img src="./assets/images/run-buddy.png" class='rounded-xl border-4 border-gray-600 opacity-95 hover:opacity-100' alt="run buddy page" />
+                        </a>
+                    </article>
+                    <article class='relative m-2'>
+                        <a class="" href="https://japankid-code.github.io/run-buddy/" target="_blank">
+                            <label class='absolute z-50 bottom-8 cursor-pointer right-0 py-2 px-4 bg-mid text-light rounded-tl-md rounded-bl-md'>
+                                <h3>TicTacToe</h3>
                                 <span>Webpage</span>
                             </label>
-                            <img src="./assets/images/run-buddy.png" alt="react tic tac toe app" />
-                        </a>
-                    </article>
-                    <article>
-                        <a class="portfolio-item tictactoe flexbox" href="https://japankid-code.github.io/reactactoe/" target="_blank">
-                            <label for="tictactoe">
-                                <h3>Tic Tac Toe</h3>
-                                <span>React app</span>
-                            </label>
-                            <img src="./assets/images/tictactoe.png" alt="react tic tac toe app" />
-                        </a>
-                    </article>
-                    <article>
-                        <a class="portfolio-item tictactoe flexbox" href="https://japankid-code.github.io/reactactoe/" target="_blank">
-                            <label for="tictactoe">
-                                <h3>Tic Tac Toe</h3>
-                                <span>React app</span>
-                            </label>
-                            <img src="./assets/images/tictactoe.png" alt="react tic tac toe app" />
-                        </a>
-                    </article>
-                    <article>
-                        <a class="portfolio-item tictactoe flexbox" href="https://japankid-code.github.io/reactactoe/" target="_blank">
-                            <label for="tictactoe">
-                                <h3>Tic Tac Toe</h3>
-                                <span>React app</span>
-                            </label>
-                            <img src="./assets/images/tictactoe.png" alt="react tic tac toe app" />
-                        </a>
-                    </article>
-                    <article>
-                        <a class="portfolio-item tictactoe flexbox" href="https://japankid-code.github.io/reactactoe/" target="_blank">
-                            <label for="tictactoe">
-                                <h3>Tic Tac Toe</h3>
-                                <span>React app</span>
-                            </label>
-                            <img src="./assets/images/tictactoe.png" alt="react tic tac toe app" />
+                            <img src="./assets/images/tictactoe.png" class='rounded-xl border-4 border-gray-600' alt="react tic tac toe enhanced app" />
                         </a>
                     </article>
                 </div>
             </section>
         </main>
-        <footer id="contact">
-            <h2 class="flexbox">Contact Me</h2>
-            <div class="divider"></div>
-            <address>
-                <ul class="flexbox">
-                    <li><a href="mailto:japankid.jake@gmail.com">Email</a></li>
-                    <li><a href="https://github.com/japankid-code">GitHub</a></li>
-                    <li><a href="https://twitter.com/japankidcodes">Twitter</a></li>
-                    <li><a href="https://open.spotify.com/user/iqfbos2wipx6uwwtzmqe2l5x1?si=u7v-GupqTtO07qFdjQCChQ">Spotify</a></li>
-                </ul>
+        <footer id="contact"  class='grid grid-cols-12 bg-dark text-light'>
+            <h2 class="col-start-2 col-span-2 flex justify-end items-center">Contact</h2>
+            <div class="divider m-2 h-10 w-1 rounded bg-mid"></div>
+            <address class='flex flex-row items-center justify-start'>
+                <a class='p-1' href="mailto:japankid.jake@gmail.com">Email</a>
+                <a class='p-1' href="https://github.com/japankid-code">GitHub</a>
+                <a class='p-1' href="https://twitter.com/japankidcodes">Twitter</a>
+                <a class='p-1' href="https://open.spotify.com/user/iqfbos2wipx6uwwtzmqe2l5x1?si=u7v-GupqTtO07qFdjQCChQ">Spotify</a>
             </address>
         </footer>
     </body>
