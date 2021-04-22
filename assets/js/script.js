@@ -1,3 +1,5 @@
+const navDropdown = document.getElementById('menu-dropdown')
+
 const dropdownToggle = () => {
-    document.getElementById('menu-dropdown').classList.toggle("hidden");
+    navDropdown.classList.toggle("hidden");
 }

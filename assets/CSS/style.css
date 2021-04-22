@@ -7,6 +7,7 @@
     --bgLight: #FFE085;
     --textLight: #d6e0e0;
     --textDark: #1E1E24;
+    --smoke: rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -32,4 +33,8 @@ a {
 
 .text-light {
     color: var(--textLight);
+}
+
+.bg-smoke {
+    background-color: var(--smoke);
 }
