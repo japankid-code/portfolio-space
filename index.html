@@ -1,127 +1,382 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Jake Rankin</title>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="./assets/CSS/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    </head>
-    <body class='flex flex-col min-h-screen min-w-screen'>
-        <header id="header" class="grid grid-cols-12 min-w-screen bg-dark text-light">
-                <h1 class='col-start-2 md:col-start-3 xl:col-start-4 text-4xl m-4 whitespace-nowrap'>Jake Rankin</h1>
-                <nav class='col-start-12 md:col-start-11 xl:col-start-10 self-center flex space-between m-2 text-sm'>
-                    <div id="nav-holder" class="relative">
-                        <button id="nav-dropdown" onclick='dropdownToggle()' class="block h-8 w-8 bg-light rounded-lg outline-none focus:outline-none">
-                            <i class="fas fa-bars rounded outline-none focus:outline-none mx-1 text-dark" ></i>
-                        </button>
-                        <div id="menu-dropdown" class='hidden absolute right-1 bg-gray-600 mt-1 rounded-lg pt-2 p-1 z-50'>
-                            <a class='block p-0.5 m-0.5 px-2 rounded text-light hover:text-black hover:bg-yellow-200' href="#about">about</a>
-                            <a class='block p-0.5 m-0.5 px-2 rounded text-light hover:text-black hover:bg-yellow-200' href="#projects">projects</a>
-                            <a class='block p-0.5 m-0.5 px-2 rounded text-light hover:text-black hover:bg-yellow-200' href="#contact">contact</a>
-                            <a class='block p-0.5 m-0.5 px-2 rounded text-light hover:text-black hover:bg-yellow-200' href="resume.pdf">resume</a>  
-                        </div>
-                    </div>
-                </nav>
-        </header>
-        <main class ='flex-grow bg-light'>
-            <!-- hero -->
-            <section id="hero" class="flex min-w-full">
-                <div class="grid grid-cols-12 p-4 min-w-full bg-mid">
-                    <img src="./assets/images/me.jpg" class='col-start-7  lg:col-start-8 col-span-10 w-64 h-56 m-2 rounded-xl opacity-50' alt="a wild jake standing in the sun">
-                </div>
-            </section>
-            <!-- about -->
-            <section id="about" class="grid grid-cols-12 m-2 self-center">
-                <h2 class="col-start-1 xl:col-start-2 col-span-3
-                           flex justify-end text-xl">
-                    About 
-                    <div class="divider m-1 h-8 w-1 rounded bg-dark ml-2"></div>
-                </h2>
-                <p class="col-span-7 xl:col-span-5 flex ml-2">
-                    I am an innovator who is passionate about rising to the challenge and creating
-                    digital products using cutting edge design. Earning a certificate in Full Stack
-                    Web Development from University of Wisconsin has developed my skills in Javascript,
-                    React, and Node. Cultivated throughout my academic and professional career, my
-                    strengths lie in creativity, teamwork, and building projects from ideation to
-                    execution. With a bachelor’s degree in fine arts from UW-Milwaukee, I have
-                    developed an eye for modern design principles. This makes me capable of executing
-                    visually compelling pages that feature user-friendly design and navigation. 
-                    My sensibility for design and teamwork coupled with a clever resourcefulness 
-                    makes me a valuable addition to any team.
-                </p>
-            </section>
-            <!-- projects -->
-            <section id="projects" class='grid grid-cols-12 m-2 max-w-8xl self-center'>
-                <h2 class="flex col-start-1 xl:col-start-2 col-span-3
-                           flex justify-end text-xl">
-                    Projects
-                    <div class="divider m-1 h-24 w-1 rounded bg-dark ml-2 justify-end"></div>
-                </h2>
-                <div id="" class='col-span-7 xl:col-span-5 grid grid-cols-2 ml-2'>
-                    <article class='relative m-2 col-span-2'>
-                        <a class="" href="https://draw-in-rooms.herokuapp.com/" target="_blank">
-                            <label class='absolute z-10 bottom-8 cursor-pointer right-2 py-2 px-4 bg-mid text-light rounded-tl-md rounded-bl-md'>
-                                <h3 class='text-lg'>Draw With Friends</h3>
-                                <span class='flex text-sm justify-center whitespace-wrap'>Complete MVC Application</span>
-                            </label>
-                            <div class="flex p-2 bg-mid rounded-xl">
-                                <img src="./assets/images/draw-with-friends.png" class='rounded-lg opacity-90 hover:opacity-100 h-full w-full object-cover' alt="draw with friends" />
-                            </div>
-                        </a>
-                    </article>
-                    <article class='relative m-2 col-span-2 md:col-span-1'>
-                        <a class="" href="https://bootcamp-project1.github.io/The-wine-cage/" target="_blank">
-                            <label class='absolute z-10 bottom-4 cursor-pointer right-1 py-1 px-2 bg-mid text-light rounded-tl-md rounded-bl-md'>
-                                <h3 class='text-lg'>The Wine Cage</h3>
-                                <span class='flex text-sm justify-center whitespace-wrap'>Collaborative server side API project</span>
-                            </label>
-                            <div class="flex p-1 bg-mid rounded-xl">
-                                <img src="./assets/images/preview-project1.png" class='rounded-lg opacity-90 hover:opacity-100 h-56 w-full object-cover' alt="nic cage app" />
-                            </div>
-                        </a>
-                    </article>
-                    <article class='relative m-2 col-span-2 md:col-span-1'>
-                        <a class="" href="https://japankid-code.github.io/weather-kid/" target="_blank">
-                            <label class='absolute z-10 bottom-4 cursor-pointer right-1 py-1 px-2 bg-mid text-light rounded-tl-md rounded-bl-md'>
-                                <h3 class='text-md'>Weather Kid</h3>
-                                <span class='flex text-xs justify-center'>vanilla JS app</span>
-                            </label>
-                            <div class="flex p-1 bg-mid rounded-xl flex-grow min-h-full">
-                                <img src="./assets/images/weather-kid.png" class='rounded-lg opacity-90 hover:opacity-100 object-cover' alt="weather app" />
-                            </div>
-                            </a>
-                    </article>
-                    <article class='relative m-2 col-span-2 md:col-span-1'>
-                        <a class="" href="https://japankid-code.github.io/reactactoe/" target="_blank">
-                            <label class='absolute z-10 bottom-4 cursor-pointer right-1 py-1 px-2 bg-mid text-light rounded-tl-md rounded-bl-md'>
-                                <h3 class='text-md'>Tic Tac Toe</h3>
-                                <span class='flex text-xs justify-center'>React App</span>
-                            </label>
-                            <div class="flex p-1 bg-mid rounded-xl flex-grow min-h-full">
-                                <img src="./assets/images/tictactoe.png" class='rounded-lg opacity-90 hover:opacity-100 object-cover' alt="react tic tac toe enhanced app" />
-                            </div>
-                            </a>
-                    </article>
-                </div>
-            </section>
-        </main>
-        <!-- contact!! -->
-        <footer id="contact"  class='grid grid-cols-12 bg-dark text-light'>
-            <h2 class="col-start-4 col-span-2 flex justify-end items-center">
-                Contact
-                <div class="divider m-2 h-10 w-1 rounded bg-mid"></div>
-            </h2>
-            
-            <address class='flex flex-row items-center justify-start'>
-                <a class='p-1' href="mailto:japankid.jake@gmail.com">Email</a>
-                <a class='p-1' href="https://github.com/japankid-code">GitHub</a>
-                <a class='p-1' href="https://twitter.com/japankidcodes">Twitter</a>
-                <a class='p-1' href="https://open.spotify.com/user/iqfbos2wipx6uwwtzmqe2l5x1?si=u7v-GupqTtO07qFdjQCChQ">Spotify</a>
-                <a class="p-1" href="https://discord.com/users/japankid#6969">Discord</a>
-            </address>
-        </footer>
-        <script src="assets/js/script.js"></script>
-    </body>
+  <head>
+    <title>Jake Rankin</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Exo+2"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex flex-col min-h-screen min-w-screen">
+    <header
+      id="header"
+      class="grid grid-cols-12 min-w-screen bg-dark text-light"
+    >
+      <h1
+        class="
+          col-start-2
+          md:col-start-3
+          xl:col-start-4
+          text-4xl
+          m-4
+          whitespace-nowrap
+        "
+      >
+        Jake Rankin
+      </h1>
+      <nav
+        class="
+          col-start-12
+          md:col-start-11
+          xl:col-start-10
+          self-center
+          flex
+          space-between
+          m-2
+          text-sm
+        "
+      >
+        <div id="nav-holder" class="relative">
+          <button
+            id="nav-dropdown"
+            onclick="dropdownToggle()"
+            class="
+              block
+              h-8
+              w-8
+              bg-light
+              rounded-lg
+              outline-none
+              focus:outline-none
+            "
+          >
+            <i
+              class="
+                fas
+                fa-bars
+                rounded
+                outline-none
+                focus:outline-none
+                mx-1
+                text-dark
+              "
+            ></i>
+          </button>
+          <div
+            id="menu-dropdown"
+            class="
+              hidden
+              absolute
+              right-1
+              bg-gray-600
+              mt-1
+              rounded-lg
+              pt-2
+              p-1
+              z-50
+            "
+          >
+            <a
+              class="
+                block
+                p-0.5
+                m-0.5
+                px-2
+                rounded
+                text-light
+                hover:text-black hover:bg-yellow-200
+              "
+              href="#about"
+              >about</a
+            >
+            <a
+              class="
+                block
+                p-0.5
+                m-0.5
+                px-2
+                rounded
+                text-light
+                hover:text-black hover:bg-yellow-200
+              "
+              href="#projects"
+              >projects</a
+            >
+            <a
+              class="
+                block
+                p-0.5
+                m-0.5
+                px-2
+                rounded
+                text-light
+                hover:text-black hover:bg-yellow-200
+              "
+              href="#contact"
+              >contact</a
+            >
+            <a
+              class="
+                block
+                p-0.5
+                m-0.5
+                px-2
+                rounded
+                text-light
+                hover:text-black hover:bg-yellow-200
+              "
+              href="resume.pdf"
+              >resume</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-grow bg-light">
+      <!-- hero -->
+      <section id="hero" class="flex min-w-full">
+        <div class="grid grid-cols-12 p-4 min-w-full bg-mid">
+          <img
+            src="./assets/images/me.jpg"
+            class="
+              col-start-7
+              lg:col-start-8
+              col-span-10
+              w-64
+              h-56
+              m-2
+              rounded-xl
+              opacity-50
+            "
+            alt="a wild jake standing in the sun"
+          />
+        </div>
+      </section>
+      <!-- about -->
+      <section id="about" class="grid grid-cols-12 m-2 self-center">
+        <h2
+          class="col-start-1 xl:col-start-2 col-span-3 flex justify-end text-xl"
+        >
+          About
+          <div class="divider m-1 h-8 w-1 rounded bg-dark ml-2"></div>
+        </h2>
+        <p class="col-span-7 xl:col-span-5 flex ml-2">
+          I am an innovator who is passionate about rising to the challenge and
+          creating digital products using cutting edge design. Earning a
+          certificate in Full Stack Web Development from University of Wisconsin
+          has developed my skills in Javascript, React, and Node. Cultivated
+          throughout my academic and professional career, my strengths lie in
+          creativity, teamwork, and building projects from ideation to
+          execution. With a bachelor’s degree in fine arts from UW-Milwaukee, I
+          have developed an eye for modern design principles. This makes me
+          capable of executing visually compelling pages that feature
+          user-friendly design and navigation. My sensibility for design and
+          teamwork coupled with a clever resourcefulness makes me a valuable
+          addition to any team.
+        </p>
+      </section>
+      <!-- projects -->
+      <section
+        id="projects"
+        class="grid grid-cols-12 m-2 max-w-8xl self-center"
+      >
+        <h2
+          class="
+            flex
+            col-start-1
+            xl:col-start-2
+            col-span-3
+            flex
+            justify-end
+            text-xl
+          "
+        >
+          Projects
+          <div
+            class="divider m-1 h-24 w-1 rounded bg-dark ml-2 justify-end"
+          ></div>
+        </h2>
+        <div id="" class="col-span-7 xl:col-span-5 grid grid-cols-2 ml-2">
+          <article class="relative m-2 col-span-2">
+            <a
+              class=""
+              href="https://draw-in-rooms.herokuapp.com/"
+              target="_blank"
+            >
+              <label
+                class="
+                  absolute
+                  z-10
+                  bottom-8
+                  cursor-pointer
+                  right-2
+                  py-2
+                  px-4
+                  bg-mid
+                  text-light
+                  rounded-tl-md rounded-bl-md
+                "
+              >
+                <h3 class="text-lg">Draw With Friends</h3>
+                <span class="flex text-sm justify-center whitespace-wrap"
+                  >Complete MVC Application</span
+                >
+              </label>
+              <div class="flex p-2 bg-mid rounded-xl">
+                <img
+                  src="./assets/images/draw-with-friends.png"
+                  class="
+                    rounded-lg
+                    opacity-90
+                    hover:opacity-100
+                    h-full
+                    w-full
+                    object-cover
+                  "
+                  alt="draw with friends"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="relative m-2 col-span-2 md:col-span-1">
+            <a
+              class=""
+              href="https://bootcamp-project1.github.io/The-wine-cage/"
+              target="_blank"
+            >
+              <label
+                class="
+                  absolute
+                  z-10
+                  bottom-4
+                  cursor-pointer
+                  right-1
+                  py-1
+                  px-2
+                  bg-mid
+                  text-light
+                  rounded-tl-md rounded-bl-md
+                "
+              >
+                <h3 class="text-lg">The Wine Cage</h3>
+                <span class="flex text-sm justify-center whitespace-wrap"
+                  >Collaborative server side API project</span
+                >
+              </label>
+              <div class="flex p-1 bg-mid rounded-xl">
+                <img
+                  src="./assets/images/preview-project1.png"
+                  class="
+                    rounded-lg
+                    opacity-90
+                    hover:opacity-100
+                    h-72
+                    w-full
+                    object-cover
+                  "
+                  alt="nic cage app"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="relative m-2 col-span-2 md:col-span-1">
+            <a
+              class=""
+              href="https://japankid-code.github.io/weather-kid/"
+              target="_blank"
+            >
+              <label
+                class="
+                  absolute
+                  z-10
+                  bottom-4
+                  cursor-pointer
+                  right-1
+                  py-1
+                  px-2
+                  bg-mid
+                  text-light
+                  rounded-tl-md rounded-bl-md
+                "
+              >
+                <h3 class="text-md">Weather Kid</h3>
+                <span class="flex text-xs justify-center">vanilla JS app</span>
+              </label>
+              <div class="flex p-1 bg-mid rounded-xl flex-grow min-h-full">
+                <img
+                  src="./assets/images/weather-kid.png"
+                  class="rounded-lg opacity-90 hover:opacity-100 object-cover"
+                  alt="weather app"
+                />
+              </div>
+            </a>
+          </article>
+          <article class="relative m-2 col-span-2 md:col-span-1">
+            <a
+              class=""
+              href="https://japankid-code.github.io/reactactoe/"
+              target="_blank"
+            >
+              <label
+                class="
+                  absolute
+                  z-10
+                  bottom-4
+                  cursor-pointer
+                  right-1
+                  py-1
+                  px-2
+                  bg-mid
+                  text-light
+                  rounded-tl-md rounded-bl-md
+                "
+              >
+                <h3 class="text-md">Tic Tac Toe</h3>
+                <span class="flex text-xs justify-center">React App</span>
+              </label>
+              <div class="flex p-1 bg-mid rounded-xl flex-grow min-h-full">
+                <img
+                  src="./assets/images/tictactoe.png"
+                  class="rounded-lg opacity-90 hover:opacity-100 object-cover"
+                  alt="react tic tac toe enhanced app"
+                />
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!-- contact!! -->
+    <footer id="contact" class="grid grid-cols-12 bg-dark text-light">
+      <h2 class="col-start-4 col-span-2 flex justify-end items-center">
+        Contact
+        <div class="divider m-2 h-10 w-1 rounded bg-mid"></div>
+      </h2>
+
+      <address class="flex flex-row items-center justify-start">
+        <a class="p-1" href="mailto:japankid.jake@gmail.com">Email</a>
+        <a class="p-1" href="https://github.com/japankid-code">GitHub</a>
+        <a class="p-1" href="https://twitter.com/japankidcodes">Twitter</a>
+        <a
+          class="p-1"
+          href="https://open.spotify.com/user/iqfbos2wipx6uwwtzmqe2l5x1?si=u7v-GupqTtO07qFdjQCChQ"
+          >Spotify</a
+        >
+        <a class="p-1" href="https://discord.com/users/japankid#6969"
+          >Discord</a
+        >
+      </address>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
